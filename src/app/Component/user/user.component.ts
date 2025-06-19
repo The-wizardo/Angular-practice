@@ -10,7 +10,6 @@ import {NgIf} from '@angular/common';
   standalone: true
 })
 export class UserComponent {
-
   constructor() {
     console.log("User Component initialize")
   }
@@ -22,12 +21,16 @@ export class UserComponent {
   city:string=''
   state:string=''
   zip:string=''
+  submitted: boolean = false;
+  buttonText: string = 'Show';
 
-  submitted:boolean=false
+  Display_the_data() {
+    this.submitted = !this.submitted;
+    this.buttonText = this.submitted ? 'Hide' : 'Show';
+  }
 
 
   showingData() {
-    this.submitted=true
     console.log('Email:', this.email);
     console.log('Password:', this.password);
     console.log('Address:', this.address);
