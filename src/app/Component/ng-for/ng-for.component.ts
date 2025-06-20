@@ -22,7 +22,8 @@ export class NgForComponent {
   employeeList:any[]=[
     {empid:1,name:"jawad",email:'jawad@correctcloud.io'},
     {empid:2,name:"Izhar Ahmed",email:'izhar@correctcloud.io'},
-    {empid:344,name:"awais",email:'awais@correctcloud.io'}
+    {empid:344,name:"awais",email:'awais@correctcloud.io'},
+    {empid:67,name:"avez",email:'avez@correctcloud.io'}
   ]
   selectedEmpId: any='';
 

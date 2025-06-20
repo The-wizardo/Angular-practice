@@ -13,3 +13,24 @@
     <option *ngFor="let emp of employeeList" [value]="emp.empid" >{{emp.name}}</option>
   </select>
 </div>
+<br>
+
+<table class="table table-hover" >
+  <thead>
+  <tr>
+    <th scope="col">Sr no</th>
+    <th scope="col">empId</th>
+    <th scope="col">email</th>
+    <th scope="col">name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let m of employeeList, let srno=index">
+    <th scope="row">{{srno+1}}</th>
+    <td>{{m.empid}}</td>
+    <td>{{m.name}}</td>
+    <td>{{m.email}}</td>
+  </tr>
+
+  </tbody>
+</table>
