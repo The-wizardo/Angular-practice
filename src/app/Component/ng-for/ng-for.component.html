@@ -5,5 +5,11 @@
       <li *ngFor="let m of jawad">{{ m }}</li>
     </ul>
   </div>
-
+</div>
+<div class="mb-3">
+  <label for="exampleSelect" class="form-label"  >Select an option</label>
+  <select class="form-select" id="exampleSelect" name="option" [(ngModel)]="selectedEmpId" (change)="onEmployeeSelect()">
+    <option value="" selected disabled>Select the Employee to print the id in console </option>
+    <option *ngFor="let emp of employeeList" [value]="emp.empid" >{{emp.name}}</option>
+  </select>
 </div>
