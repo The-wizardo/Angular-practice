@@ -1,0 +1,5 @@
+.custom-active {
+  color: #0d6efd !important; /* Bootstrap primary blue or choose your color */
+  font-weight: bold;
+  border-bottom: 2px solid #0d6efd;
+}
