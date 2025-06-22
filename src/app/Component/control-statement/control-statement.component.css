@@ -1,0 +1,4 @@
+.nav-link.custom-active {
+  color: red !important;
+  font-weight: bold;
+}
